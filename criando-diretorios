@@ -1,0 +1,76 @@
+pwd: https://www.guiafoca.org/guiaonline/inicianteintermediario/ch08s03.html
+
+Mostra o nome e caminho do diretório atual, você pode usar o comando pwd para verificar em qual diretório se encontra (caso seu aviso de comandos não mostre isso).
+
+ls: https://www.guiafoca.org/guiaonline/inicianteintermediario/ch08.html#comando-ls
+
+ls -l O comando ls -l no Linux exibe uma listagem detalhada dos arquivos e diretórios no diretório atual
+
+O comando **`ls`** é utilizado no terminal de sistemas Unix e Linux para **listar arquivos e diretórios**. Aqui está um resumo das suas principais funções:
+
+1. Listar arquivos e diretórios**: Exibe o conteúdo do diretório atual ou de um diretório específico.
+   
+   - Exemplo: `ls` mostra todos os arquivos e diretórios no diretório atual.
+
+2. Mostrar detalhes com `-l` (listagem longa)**: Exibe uma lista detalhada, incluindo permissões de arquivos, proprietário, grupo, tamanho e data de modificação.
+   
+    - Exemplo: `ls -l` mostra algo como:
+     ```
+    -rw-r--r--  1 user group 1234 Oct 23 12:00 file.txt
+     ```
+
+3. Incluir arquivos ocultos com `-a`: Exibe todos os arquivos, incluindo os ocultos (aqueles que começam com `.`).
+   
+   - Exemplo: `ls -a` mostrará arquivos como `.bashrc`.
+
+4. Organizar por tamanho, data, etc.**: Com diferentes opções, o `ls` pode ordenar a listagem, como por data de modificação (`-t`), por tamanho (`-S`), ou alfabética (padrão).
+
+5. Mostrar arquivos em subdiretórios com `-R`: Exibe o conteúdo recursivamente, incluindo subdiretórios.
+
+6. Indicar tipos de arquivos com `-F`: Adiciona caracteres especiais indicando o tipo de arquivo, como `/` para diretórios, `*` para executáveis.
+
+Exemplos combinados:
+- `ls -la`: Lista todos os arquivos, incluindo ocultos, com detalhes.
+
+Essas funções tornam o `ls` essencial para navegar, visualizar e organizar arquivos e diretórios no sistema.
+
+cd: https://www.guiafoca.org/guiaonline/inicianteintermediario/ch08s02.html
+
+O comando **`cd`** (change directory) é utilizado para **navegar entre diretórios** no terminal de sistemas Unix, Linux, e Windows. Aqui está um resumo das principais funções do `cd`:
+
+1. Mudar para um diretório específico**: Permite que você navegue para o diretório especificado.
+   - Exemplo: `cd /home/felipe` muda o diretório atual para `/home/felipe`.
+
+2. Voltar para o diretório home**: Se usado sem argumentos, o `cd` leva você diretamente ao seu diretório pessoal (home).
+   - Exemplo: `cd` ou `cd ~` te leva para `/home/usuário`.
+
+3. Mudar para o diretório pai (`..`)**: Move você um nível acima na hierarquia de diretórios, para o diretório pai.
+   - Exemplo: `cd ..` te leva para o diretório acima do atual.
+
+4. Voltar ao diretório anterior (`-`)**: Retorna para o último diretório que você estava antes da mudança.
+   - Exemplo: `cd -` alterna entre o diretório atual e o anterior.
+
+5. Navegação por caminho relativo**: Você pode usar caminhos relativos ao invés de absolutos. Um caminho relativo é baseado no diretório atual.
+   - Exemplo: Se você está em `/home/felipe`, `cd documentos` vai para `/home/felipe/documentos`.
+
+6. Mudar entre diretórios de múltiplos níveis**: Você pode navegar entre múltiplos diretórios de uma vez, desde que o caminho completo seja especificado.
+   - Exemplo: `cd /var/log/apache2` vai diretamente para essa pasta.
+
+Essas funções tornam o `cd` uma ferramenta essencial para navegar e manipular diretórios no sistema de arquivos.
+
+mkdir: https://www.guiafoca.org/guiaonline/inicianteintermediario/ch08s04.html
+
+O comando **`mkdir`** (make directory) é usado no terminal de sistemas Unix, Linux e Windows para **criar novos diretórios**. Aqui estão as principais funções do `mkdir`:
+
+1. Criar um novo diretório**: Cria um diretório com o nome especificado no local atual ou em um caminho específico.
+   - Exemplo: `mkdir novo-diretorio` cria um diretório chamado "novo-diretorio" no diretório atual.
+
+2. Criar diretórios em um caminho específico**: Você pode especificar um caminho completo para criar um diretório em outro lugar do sistema.
+   - Exemplo: `mkdir /home/felipe/projetos` cria o diretório "projetos" dentro de "/home/felipe".
+
+3. Criar diretórios com subdiretórios usando `-p`**: Permite criar uma hierarquia de diretórios, criando todos os diretórios necessários se ainda não existirem.
+   - Exemplo: `mkdir -p /home/felipe/projetos/novo-projeto` cria o diretório "projetos" e o subdiretório "novo-projeto", caso eles não existam.
+
+4. Mostrar mensagens de erro**: Se o diretório já existir ou você não tiver permissões, o `mkdir` retornará uma mensagem de erro informando o motivo da falha.
+
+Essas são as principais funções do `mkdir`, usado principalmente para estruturar pastas e organizar arquivos no sistema de forma eficiente.
